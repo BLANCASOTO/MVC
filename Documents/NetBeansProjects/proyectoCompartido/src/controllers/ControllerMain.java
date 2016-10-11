@@ -25,7 +25,7 @@ ModelMain modelmain;
         this.modelmain = modelmain;
         this.views = views;
         
-         this.viewmain.jMcalcular.addActionListener( this);
+         this.viewmain.jMarea.addActionListener( this);
           this.viewmain.jMVolumen.addActionListener( this);
                 this.viewmain.jMPerimetro.addActionListener( this);
           initView();

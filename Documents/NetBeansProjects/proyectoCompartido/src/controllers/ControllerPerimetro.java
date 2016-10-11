@@ -14,46 +14,46 @@ import models.ModelPerimetro;
  * @author Bnc
  */
 public class ControllerPerimetro    implements ActionListener{
-    ModelPerimetro modelperimetro;
-    ViewPerimetro viewperimetro;
+    ModelPerimetro modelPerimetro;
+    ViewPerimetro viewPerimetro;
 
     public ControllerPerimetro(ViewPerimetro viewPerimetro, ModelPerimetro modelPerimetro) {
-        this.modelperimetro = modelperimetro;
-        this.viewperimetro = viewperimetro;
+        this.modelPerimetro = modelPerimetro;
+        this.viewPerimetro = viewPerimetro;
         
-          this.viewperimetro.jBquadrado.addActionListener(this);
-          this.viewperimetro.jBrombo.addActionListener(this);
-          this.viewperimetro.jBrectangulo.addActionListener(this); 
+          this.viewPerimetro.jBquadrado.addActionListener(this);/////////////////////////
+          this.viewPerimetro.jBrombo.addActionListener(this);
+          this.viewPerimetro.jBrectangulo.addActionListener(this); 
     }
 
       public void quadrado(){
         
-        this.modelperimetro.setLado(Double.parseDouble(viewperimetro.jTlado.getText()));
+        this.modelPerimetro.setLado(Double.parseDouble(viewPerimetro.jTlado.getText()));
         
-      this.viewperimetro.jTResultadoquadrado.setText(""+this.modelperimetro.quadrado());
+      this.viewPerimetro.jTResultadoquadrado.setText(""+this.modelPerimetro.quadrado());
     }
       
           public void rombo(){
        
-                this.modelperimetro.setLadoRombo(Double.parseDouble(viewperimetro.jTladoRombo.getText()));
+                this.modelPerimetro.setLadoRombo(Double.parseDouble(viewPerimetro.jTladoRombo.getText()));
                 
-      this.viewperimetro.jTresultadorombo.setText(""+this.modelperimetro.rombo());
+      this.viewPerimetro.jTresultadorombo.setText(""+this.modelPerimetro.rombo());
     }
           
                public void rectangulo(){
         
-        this.modelperimetro.setLargo(Double.parseDouble(viewperimetro.jTlargo.getText()));
-            this.modelperimetro.setAncho(Double.parseDouble(viewperimetro.jTAncho.getText()));
-      this.viewperimetro.jBrectangulo.setText(""+this.modelperimetro.rectangulo());
+        this.modelPerimetro.setLargo(Double.parseDouble(viewPerimetro.jTlargo.getText()));
+            this.modelPerimetro.setAncho(Double.parseDouble(viewPerimetro.jTAncho.getText()));
+      this.viewPerimetro.jTresultadorectangulo.setText(""+this.modelPerimetro.rectangulo());
     }
                
                 
         public void actionPerformed(ActionEvent ae) {
-             if (ae.getSource() ==viewperimetro.jBquadrado){
+             if (ae.getSource() ==viewPerimetro.jBquadrado){
             quadrado();
-             }else if(ae.getSource() ==viewperimetro.jBrectangulo){
+             }else if(ae.getSource() ==viewPerimetro.jBrectangulo){
        rectangulo();
-             }else if(ae.getSource() ==viewperimetro.jBrombo){
+             }else if(ae.getSource() ==viewPerimetro.jBrombo){
      rombo();
      
     }

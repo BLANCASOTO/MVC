@@ -45,7 +45,7 @@ public class Main {
     
          viewPerimetro=new  ViewPerimetro();
         modelPerimetro=new ModelPerimetro();
- //   controllerPerimetro=new ControllerPerimetro(viewPerimetro,modelPerimetro);
+  controllerPerimetro=new ControllerPerimetro(viewPerimetro,modelPerimetro);////////////////////////
     
     JPanel views[]=new JPanel[3];  
   views[0]=viewVolumen;   
