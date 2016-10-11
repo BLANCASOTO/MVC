@@ -252,7 +252,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="1"/>
+          <Font name="Monospaced" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value=" Areas"/>
       </Properties>

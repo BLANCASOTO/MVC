@@ -77,7 +77,7 @@ public class ViewArea extends javax.swing.JPanel {
 
         jBrectangulo.setText("Calcular");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
         jLabel10.setText(" Areas");
 
         jLabel11.setText("Resultado");
