@@ -49,17 +49,21 @@ public class ViewPerimetro extends javax.swing.JPanel {
         jTResultadoquadrado = new javax.swing.JTextField();
         jTlado = new javax.swing.JTextField();
 
+        jBrectangulo.setBackground(new java.awt.Color(0, 204, 204));
         jBrectangulo.setText("Calcular");
 
         jLabel2.setText("Lado");
 
+        jLabel10.setBackground(new java.awt.Color(0, 153, 153));
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel10.setText("Calculo de Perimetros");
+        jLabel10.setText("Calculo de Perimetros de figuras");
 
         jLabel1.setText("QUADRADO");
 
+        jBquadrado.setBackground(new java.awt.Color(0, 204, 204));
         jBquadrado.setText("Calcular");
 
+        jBrombo.setBackground(new java.awt.Color(0, 153, 153));
         jBrombo.setText("Calcular");
 
         jLabel8.setText("Resultado");
@@ -83,31 +87,6 @@ public class ViewPerimetro extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(Largo)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel8))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTlado)
-                    .addComponent(jTResultadoquadrado)
-                    .addComponent(jTladoRombo)
-                    .addComponent(jTresultadorombo)
-                    .addComponent(jTlargo)
-                    .addComponent(jTAncho)
-                    .addComponent(jTresultadorectangulo))
-                .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBrectangulo)
-                    .addComponent(jBrombo)
-                    .addComponent(jBquadrado))
-                .addGap(28, 28, 28))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(150, 150, 150)
@@ -117,11 +96,38 @@ public class ViewPerimetro extends javax.swing.JPanel {
                         .addComponent(jLabel7))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(141, 141, 141)
-                        .addComponent(jLabel1))
+                        .addComponent(jLabel1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jLabel10)))
-                .addContainerGap(77, Short.MAX_VALUE))
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6)
+                            .addComponent(Largo)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel8))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTlado)
+                            .addComponent(jTResultadoquadrado)
+                            .addComponent(jTladoRombo)
+                            .addComponent(jTresultadorombo)
+                            .addComponent(jTlargo)
+                            .addComponent(jTAncho)
+                            .addComponent(jTresultadorectangulo))
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jBrectangulo)
+                            .addComponent(jBrombo)
+                            .addComponent(jBquadrado))
+                        .addGap(28, 28, 28))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
