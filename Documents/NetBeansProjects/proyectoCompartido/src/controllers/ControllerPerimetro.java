@@ -46,7 +46,7 @@ public class ControllerPerimetro    implements ActionListener{
             this.modelPerimetro.setAncho(Double.parseDouble(viewPerimetro.jTAncho.getText()));
       this.viewPerimetro.jTresultadorectangulo.setText(""+this.modelPerimetro.rectangulo());
     }
-               
+            
                 
         public void actionPerformed(ActionEvent ae) {
              if (ae.getSource() ==viewPerimetro.jBquadrado){
